@@ -16,8 +16,8 @@ class Fetcher {
         this._postData = await fetch(this.postUrl, {
             method: 'POST',
             headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(this.postObj)
         })
