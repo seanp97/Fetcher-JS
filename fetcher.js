@@ -1,4 +1,3 @@
-
 class Fetcher {
 
     GetJSON = async (url) => {
