@@ -25,4 +25,15 @@ class Fetcher {
         return this._content
     }
 
+    QueryParam(param) {
+        this._param = param
+
+        this.urlParams = new URLSearchParams(window.location.search)
+        this.myParam = this.urlParams.get(this._param)
+
+        if(!this.urlParams || !this.myParam) return undefined
+
+        return this.myParam
+    }
+
 }
